@@ -1,1 +1,66 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  margin: 0 50px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.is-hidden {
+  display: none;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+#search-input {
+  height: 50px;
+  width: 300px;
+  padding-left: 10px;
+
+  border-radius: 5px;
+  border: 2px solid #000;
+  outline: none;
+}
+button {
+  background-color: rgba(54, 54, 255, 0.824);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+#show-more {
+  margin-bottom: 50px;
+}
+.show-more__wrapper {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.articles {
+  &__container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    & li {
+      max-width: 500px;
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #000;
+    }
+  }
+}
+.img-articles {
+  display: block;
+  max-width: 100%;
+}
